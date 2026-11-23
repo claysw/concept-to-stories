@@ -1,0 +1,13 @@
+{
+  "name": "concept-to-stories",
+  "owner": {
+    "name": "claysw"
+  },
+  "plugins": [
+    {
+      "name": "concept-to-stories",
+      "source": "./",
+      "description": "Grill a product concept one question at a time, turn it into user stories, critique and split them, and track everything in a Claude Sheet."
+    }
+  ]
+}
