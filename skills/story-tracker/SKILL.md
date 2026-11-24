@@ -82,7 +82,7 @@ Write a Claude Doc that reads top-down as Concept > Step > Story > Detail. Load 
 4. Write one section per storied concept, in ID order, one call per section:
    - `## C-001 Title` followed by a Concept status chip, then `**Problem:**` in one line.
    - `### <Step>` per step, in the order the steps happen.
-   - Under each step, a table with columns ID | Story and details | Status, so the chips line up in their own column on the right.
+   - Under each step, a table with columns ID | Story and details | Status, so the chips line up in their own column on the right. Set the header cells' column widths to about 90, 560 and 130 px.
    - A story row: bold ID, then the bold title followed by the full story sentence, then its Status chip.
    - Its detail rows follow it: the ID, the detail as a short behavior, then a Status chip. Drop the repeated "As a <persona>, I want" opening, but keep the meaning.
 5. End with a "Not yet storied" section: a table of raw or grilling concepts (ID | Concept | Status).
