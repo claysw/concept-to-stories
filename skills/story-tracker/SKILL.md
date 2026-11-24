@@ -1,6 +1,6 @@
 ---
 name: story-tracker
-description: Look up, filter and update concepts and user stories in the story tracker Sheet between interviews. Use when someone asks to show, filter, approve, park, review, edit or link stories or concepts, confirm assumptions, refresh links, set up a tracker, or re-grill one concept.
+description: Look up, filter and update concepts and user stories in the story tracker Sheet between interviews. Use when someone asks to show, filter, approve, park, review, edit or link stories or concepts, confirm assumptions, refresh links, set up a tracker, export an outline doc, or re-grill one concept.
 ---
 
 # Story tracker
@@ -69,6 +69,24 @@ Write the relation on both concept rows (Spun out of / Spins off, Depends on on 
 "Refresh links", or after any sort, insert or split.
 
 Rewrite every multi-link markdown cell (Blocked by, Blocks, Relates to, Related concepts with more than one target) to point at the rows as they now lie, and rewrite any link formula that reads `#N/A` or `#REF!`. Report how many cells changed.
+
+### Export an outline
+
+"Export as an outline", "make a doc of C-001", "give me pages I can read".
+
+Write a Claude Doc that reads top-down as Concept > Step > Story > Detail. Load the Docs guide first.
+
+1. Read Concepts, Stories and Details (Title, Problem, Status, Step, Story and Detail text).
+2. Create the doc titled `<tracker name> Outline`. Its lead says it's a snapshot of the Sheet, with a link, and that statuses change in the Sheet.
+3. Create two dropdown enums in the doc: Status (draft, in-review, approved, parked) and Concept status (raw, grilling, storied, parked).
+4. Write one section per storied concept, in ID order, one call per section:
+   - `## C-001 Title` followed by a Concept status chip, then `**Problem:**` in one line.
+   - `### <Step>` per step, in the order the steps happen.
+   - Under each step, a bullet per story: a Status chip, the bold ID and title, then the full story sentence on the next line.
+   - Nested bullets for details: a Status chip, the ID, then the detail as a short behavior. Drop the repeated "As a <persona>, I want" opening, but keep the meaning.
+5. End with a "Not yet storied" section listing raw or grilling concepts with their chips.
+
+When one concept is named, export only that one. When asked again, make a fresh doc, or replace the sections of the earlier one when the person gives its link. The doc never writes back to the Sheet.
 
 ### Set up a tracker
 

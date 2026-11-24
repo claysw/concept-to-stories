@@ -1,9 +1,15 @@
 {
   "name": "concept-to-stories",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Grill a product concept one question at a time, turn it into user stories, critique and split them, and track everything in a Claude Sheet.",
   "author": {
     "name": "claysw"
   },
-  "keywords": ["user stories", "product", "grilling", "requirements", "personas"]
+  "keywords": [
+    "user stories",
+    "product",
+    "grilling",
+    "requirements",
+    "personas"
+  ]
 }

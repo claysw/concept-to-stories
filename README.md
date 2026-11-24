@@ -69,7 +69,7 @@ Claude should restate the idea in one line, ask whether it got it right, and off
 |---|---|---|
 | **grill-concept** | Turn a new concept into stories, or dig deeper into one | "Here's an idea: …", "re-grill C-003" |
 | **critique-stories** | Check stories are ready and split the big ones | "critique C-001", "split S-010" |
-| **story-tracker** | Everything between interviews: filter, approve, edit, link, confirm assumptions | "show in-review stories for quick-tidier", "approve S-004", "what's still assumed?" |
+| **story-tracker** | Everything between interviews: filter, approve, edit, link, confirm assumptions | "show in-review stories for quick-tidier", "approve S-004", "what's still assumed?", "export as an outline" |
 
 ## How they fit
 
